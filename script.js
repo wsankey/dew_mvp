@@ -7,8 +7,8 @@ $(document).ready(function() {
   //Reading map file and data
 
   queue()
-  .defer(d3.json, "_json/us.json")
-  .defer(d3.json, "_data/dewmvpv1.json")
+  .defer(d3.json, "us.json")
+  .defer(d3.json, "dewmvpv1.json")
   .await(ready);
 
   function ready(error, us, food_data) {
